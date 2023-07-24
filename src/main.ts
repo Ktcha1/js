@@ -38,3 +38,30 @@
 // let input2=parseFloat(prompt('текущие минуты') as string)
 // let h=parseInt(`${(1440-input*60-input2)/60}`)
 // alert(`до следующего дня осталось ${h} часов ${60-(input2)} минут`)
+
+// let vop=(prompt('Какое оф.название JS') as string)
+// if (vop=='ECMAScript') { 
+//   alert( 'Верно!' );
+// } else {
+//   alert('Не знаете ECMAScript'); 
+// }
+
+// let result= (a + b < 4) ? 'Мало' : 'Много'
+
+// let chis=+parseFloat(prompt('Введите число') as string)
+// if (chis>0) {
+//   alert('1');
+// }
+// else if (chis<0) {
+//  alert('-1');
+// }
+// else if (chis==0) {
+//   alert('0');
+// }
+
+let login = ''
+let message = (login == 'Сотрудник') ? 'Привет' :
+ (login == 'Директор') ? 'Здравствуйте' :
+ (login == '') ? 'Нет логина':
+  '' 
+alert(message)
