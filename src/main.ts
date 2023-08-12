@@ -120,27 +120,26 @@
 // 2.Запросить у пользователя число от 0 до 9 и вывести ему спецсимвол,
 //  который расположен на этой клавише (1–!,2–@, 3–# и т. д).
 // let namber=+parseFloat(prompt('Укажите число от 0 до 9') as string)
-// let message
-// if (namber = 1) {
-//     message= '!' ;
-// } else if (namber = 2) {
-//     message = '@' ;
-// } else if (namber = 3) {
-//     message='№' ;
-// }else if (namber = 4) {
-//     message=';' ;
-// }else if (namber = 5) {
-//     message='%';
-// }else if (namber = 6) {
-//     message=':';
-// }else if (namber = 7) {
-//     message='?' ;
-// }else if (namber = 8) {
-//     message='*' ;
-// }else if (namber = 9) {
-//     message= '9!';
+// if (namber == 1) {
+//     alert ('!') ;
+// } else if (namber == 2) {
+//     alert ('@') ;
+// } else if (namber == 3) {
+//     alert('№') ;
+// }else if (namber == 4) {
+//     alert(';') ;
+// }else if (namber == 5) {
+//     alert('%');
+// }else if (namber == 6) {
+//     alert(':');
+// }else if (namber == 7) {
+//     alert('?') ;
+// }else if (namber == 8) {
+//     alert('*') ;
+// }else if (namber == 9) {
+//     alert ('9!');
 // }
-// alert( message )
+
 
 
 
