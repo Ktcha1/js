@@ -117,4 +117,31 @@
 //   'пенсионер';
 //   alert(message)
 
+// 2.Запросить у пользователя число от 0 до 9 и вывести ему спецсимвол,
+//  который расположен на этой клавише (1–!,2–@, 3–# и т. д).
+// let namber=+parseFloat(prompt('Укажите число от 0 до 9') as string)
+// let message
+// if (namber = 1) {
+//     message= '!' ;
+// } else if (namber = 2) {
+//     message = '@' ;
+// } else if (namber = 3) {
+//     message='№' ;
+// }else if (namber = 4) {
+//     message=';' ;
+// }else if (namber = 5) {
+//     message='%';
+// }else if (namber = 6) {
+//     message=':';
+// }else if (namber = 7) {
+//     message='?' ;
+// }else if (namber = 8) {
+//     message='*' ;
+// }else if (namber = 9) {
+//     message= '9!';
+// }
+// alert( message )
 
+
+
+// 3.Запросить у пользователя трехзначное и число и проверить, есть ли в нем одинаковые цифры.
