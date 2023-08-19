@@ -144,3 +144,14 @@
 
 
 // 3.Запросить у пользователя трехзначное и число и проверить, есть ли в нем одинаковые цифры.
+// const num = prompt('3zn chislo') as string
+// for (let i=0;i<num.length;i++) {
+//     let sovp = 0
+//     for(let j=0;j<num.length;j++) {
+//         if (num[i]==num[j]) sovp++
+//     }
+//     if (sovp>1) {
+//         alert('est odinakovie')
+//         break
+//     }
+// }
