@@ -7,8 +7,38 @@
     <title>Vite + TS</title>
   </head>
   <body>
-    kjuyfg!!!
     <div id="app"></div>
+    <div style="display: grid; grid-template-columns: 2fr 1fr; height: 500px;">
+        <div id="canvas" style="position: relative;"> 
+          <div id="rect" style="background-color: blueviolet; position: absolute;"></div>
+        </div>
+          <div id="controls">
+            <div>
+              <button id="moveLeftTop"></button>
+              <button id="moveTop">▲</button>
+              <button id="moveRightTop"></button>
+            </div>
+            <div>
+              <button moveLeft><span style="display: block; transform: rotate(-90deg);">▲</span></button>
+              <button></button>
+              <button><span style="display: block; transform: rotate(45deg);">▲</span></button>
+            </div>
+            <div>
+              <button></button>
+              <button><span style="display: block; transform: rotate(135deg);">▲</span></button>
+              <button></button>
+            </div>
+            <div>
+              <button>&gt;=&lt;</button>
+              <button>&lt;=&gt;</button>
+            </div>
+            <div>
+              <button><span style="display: block; transform: rotate(90deg);">&gt;=&lt;</span></button>
+              <button><span style="display: block; transform: rotate(90deg);">&lt;=&gt;</span></button>
+            </div>
+            
+          </div>
+    </div>
     <script type="module" src="/src/main.ts"></script>
     <!-- <script>
       alert('hello')

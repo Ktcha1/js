@@ -1,4 +1,4 @@
-
+import './style.css'
 
 
 // 1.Запросите у пользователя число, возведите это число во 2-ю степень и выведите на экран.
@@ -161,3 +161,97 @@
 // урок 19.09 (pz м 1 week 5)
 // 2 Написать функцию, которая выводит все числа из заданного пользователем диапазона в прямом порядке. И еще одну
 // функцию – для вывода в обратном порядке.
+
+
+// 2 модуль 1 неделя
+// Создать объект, описывающий прямоугольник (хранит координаты левой верхней и правой нижней точек), и написать следующие функции 
+// для работы с таким объектом.
+type Rect = {
+    x0:number,
+    y0:number,
+    x1:number,
+    y1:number,
+}
+const rect = {
+        x0:50,
+        y0:50,
+        x1:100,
+        y1:100,
+}
+
+const rectDiv = document.getElementById('rect')
+function renderRect(rect: Rect){
+    if(rectDiv){
+        rectDiv.style.top = rect.y0 + 'px'
+        rectDiv.style.left = rect.x0 + 'px'
+        rectDiv.style.width = getRectWidth(rect) + 'px'
+        rectDiv.style.height = getRectHeight(rect) + 'px'
+    }
+}
+renderRect(rect)
+
+// 1 Функция принимает объект-прямоугольник и выводит информацию о нем (где какая точка расположена).
+function showRectInfo(rect: Rect) {
+    console.log(`top-left (${rect.x0}, ${rect.y0}) bootom-right (${rect.x1}, ${rect.y1})`)
+}
+showRectInfo(rect) 
+
+// 2 Функция принимает объект-прямоугольник и возвращает его ширину.
+function getRectWidth(rect: Rect){
+    return rect.x1 - rect.x0
+}
+
+// 3 Функция принимает объект-прямоугольник и возвращает его высоту.
+function getRectHeight(rect: Rect){
+    return rect.y1 - rect.y0
+}
+// 4 Функция принимает объект-прямоугольник и возвращает его площадь.
+    function retRectArea(rect: Rect){
+        return getRectWidth(rect) * getRectHeight(rect)
+    }
+    console.log(`площадь прямоугольника ${retRectArea(rect)}px`)
+
+// 5 Функция принимает объект-прямоугольник и возвращает его периметр.
+function getRectPerimetr(rect: Rect){
+    return getRectWidth(rect) * 2 + getRectHeight(rect) * 2
+}
+console.log(`периметр прямоугольника ${getRectPerimetr(rect)}px`)
+
+// 6 Функция изменения ширины прямоугольника. Она принимает объект-прямоугольник и на сколько единиц изменить ширину.
+function changeRectWidth(rect: Rect, n:number){
+    rect.x1+=n 
+}
+
+// 7 Функция изменения высоты прямоугольника. Она принимает объект-прямоугольник и на сколько единиц изменить высоту.
+function changeRectHeight(rect: Rect, n:number){
+    rect.y1+=n 
+}
+
+// 8 Функция изменения ширины и высоты прямоугольника.Она принимает объект-прямоугольник и два значения –
+// для изменения ширины и высоты.
+function changeRectHeightAndHeight(rect: Rect, x:number ,y:number){
+    changeRectWidth(rect, x)
+    changeRectHeight(rect, y)
+}
+
+// 9 Функция смещения прямоугольника по оси X. Она принимает объект-прямоугольник и на сколько единиц его
+// сдвинуть.
+function changeRectPositionX(rect: Rect, n:number){
+    rect.x0+=n 
+    rect.x1+=n 
+}
+
+// 10 Функция смещения прямоугольника по оси Y. Она принимает объект-прямоугольник и на сколько единиц его
+// сдвинуть.
+function changeRectPositionY(rect: Rect, n:number){
+    rect.y0+=n 
+    rect.y1+=n 
+}
+// 11 Функция смещения прямоугольника и по оси X и по оси Y. Она принимает объект-прямоугольник и два значения: 
+// сдвиг по оси X и сдвиг по оси Y.
+function changeRectPosition(rect: Rect, x:number, y:number){
+    changeRectPositionX(rect,x) 
+    changeRectPositionY(rect, y)
+}
+// 12 Функция для проверки, находится ли точка внутри прямоугольника. Она принимает объект-прямоугольник и
+// координаты точки.
